@@ -1,0 +1,24 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "src/initialize.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icons/48.png",
+      "default_title": "Click for Thomaskoova help!!!!"
+   },
+   "content_scripts": [ {
+      "js": [ "src/content-script.js" ],
+      "matches": [ "*://*.edupage.org/*" ]
+   } ],
+   "description": "Created by Thomaskoo. :D",
+   "icons": {
+      "48": "icons/48.png"
+   },
+   "manifest_version": 2,
+   "name": "ThomaskooHack",
+   "permissions": [ "*://*/edupage.org/*", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4",
+   "web_accessible_resources": [ "src/eros-hack.js" ]
+}
